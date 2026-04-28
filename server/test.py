@@ -255,7 +255,7 @@ async def upload_file(
     with filepath.open("wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
 
-    url = f"http://192.168.0.7:8000/static/{file_type}/{filename}"
+    url = f"http://45.150.36.29:8000/static/{file_type}/{filename}"
 
     # Сохраняем метаданные в БД
     media = MediaFile(
